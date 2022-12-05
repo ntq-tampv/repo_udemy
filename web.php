@@ -1,3 +1,12 @@
-Route::get('/v2/cmsgtemplate', 'CmsgtemplateController@index')->name('get_cmsgtemplate');
-Route::post('/v2/cmsgtemplate', 'CmsgtemplateController@index')->name('post_cmsgtemplate');
-Route::get('/v2/cevent/about', 'CeventController@about')->name('get_cevent_about');
+Route::get('/v2/cworkingcondition', 'CworkingconditionController@index')->name('get_cworkingcondition');
+Route::get('/v2/cworkingcondition/index', 'CworkingconditionController@index')->name('get_cworkingcondition_index');
+Route::post('/v2/cworkingcondition', 'CworkingconditionController@index')->name('post_cworkingcondition');
+Route::post('/v2/cworkingcondition/index', 'CworkingconditionController@index')->name('post_cworkingcondition_index');
+Route::get('/v2/cworkingcondition/delete/{hireyear}', 'CworkingconditionController@delete')->name('get_cworkingcondition_delete');
+Route::get('/v2/cdecidemanage/new/{status?}', 'CdecidemanageController@new')->name('get_cdecidemanage_new');
+Route::post('/v2/cdecidemanage/new/{status?}', 'CdecidemanageController@new')->name('post_cdecidemanage_new');
+Route::get('/v2/csettings/phase', 'Csettings\PhaseController@index')->name('get_csettings_phase');
+Route::get('/v2/cinformation/page/{id}', 'CinformationController@page')->name('get_cinformation_page');
+Route::get('/v2/cmsgtemplate', 'CmsgtemplateController@index');
+Route::post('/v2/cmsgtemplate', 'CmsgtemplateController@index');
+Route::get('/v2/cevent/about', 'CeventController@about');
