@@ -7,6 +7,6 @@ Route::get('/v2/cdecidemanage/new/{status?}', 'CdecidemanageController@new')->na
 Route::post('/v2/cdecidemanage/new/{status?}', 'CdecidemanageController@new')->name('post_cdecidemanage_new');
 Route::get('/v2/csettings/phase', 'Csettings\PhaseController@index')->name('get_csettings_phase');
 Route::get('/v2/cinformation/page/{id}', 'CinformationController@page')->name('get_cinformation_page');
-Route::get('/v2/cmsgtemplate', 'CmsgtemplateController@index');
-Route::post('/v2/cmsgtemplate', 'CmsgtemplateController@index');
-Route::get('/v2/cevent/about', 'CeventController@about');
+Route::get('/v2/cmsgtemplate', 'CmsgtemplateController@index')->name('get_cmsgtemplate');
+Route::post('/v2/cmsgtemplate', 'CmsgtemplateController@index')->name('post_cmsgtemplate');
+Route::get('/v2/cevent/about', 'CeventController@about')->name('get_cevent_about');
