@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  font-family: sans-serif; /* Change your font family */
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table thead tr.disable {
+  background-color: #f10222cc;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.last-of-type-disable {
+  border-bottom: 2px solid #f10222cc;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+</style>
+</head>
+
+<h2 style="color: #009879;">Deeplink: Enable</h2>
+
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Screen</th>
+      <th>Scheme URL</th>
+      <th>App Link/Universal Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Login</td>
+      <td><a href="offerbox://slogin">offerbox://slogin</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/slogin">https://offerbox-stg.ntq.solutions/slogin</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Open tab Top</td>
+      <td><a href="offerbox://showtop">offerbox://showtop</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sindex/mobiletop">https://offerbox-stg.ntq.solutions/sindex/mobiletop</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Open tab Offer</td>
+      <td><a href="offerbox://showoffer">offerbox://showoffer</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/soffer">https://offerbox-stg.ntq.solutions/soffer</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Open tab Offer</td>
+      <td><a href="offerbox://showfavorite">offerbox://showfavorite</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sfavorite">https://offerbox-stg.ntq.solutions/sfavorite</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Open tab Profile</td>
+      <td><a href="offerbox://showprofile">offerbox://showprofile</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sprof/profdone">https://offerbox-stg.ntq.solutions/sprof/profdone/</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Open tab InterView</td>
+      <td><a href="offerbox://showinterview">offerbox://showinterview</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sinterview2">https://offerbox-stg.ntq.solutions/sinterview2</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>/sindex</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sindex">https://offerbox-stg.ntq.solutions/sindex</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>/smenu/basic</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/smenu/basic">https://offerbox-stg.ntq.solutions/smenu/basic</a></td>
+    </tr>
+    <tr>
+    <tr>
+      <td>9</td>
+      <td>/smenu/unique</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/smenu/unique">https://offerbox-stg.ntq.solutions/smenu/unique</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>/sanalyzeuplus/exam</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sanalyzeuplus/exam">https://offerbox-stg.ntq.solutions/sanalyzeuplus/exam</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>/sinvite</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sinvite">https://offerbox-stg.ntq.solutions/sinvite</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>/sdiaghighperform360</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sdiaghighperform360">https://offerbox-stg.ntq.solutions/sdiaghighperform360</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>/sindex/gift</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sindex/gift">https://offerbox-stg.ntq.solutions/sindex/gift</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>/scommentbox</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/scommentbox">https://offerbox-stg.ntq.solutions/scommentbox</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>/soffer/offerapprove/8</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/soffer/offerapprove/8">https://offerbox-stg.ntq.solutions/soffer/offerapprove/8</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>/scompany/detail/8</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/scompany/detail/8">https://offerbox-stg.ntq.solutions/scompany/detail/8</a></td>
+    </tr>
+<tr>
+      <td>17</td>
+      <td>/slookatme/request/8</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/slookatme/request/8">https://offerbox-stg.ntq.solutions/slookatme/request/8</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>/swritemore/detail/8</td>
+      <td>None</td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/swritemore/detail/8">https://offerbox-stg.ntq.solutions/swritemore/detail/8</a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2 style="color: #f10222cc;">Deeplink Disable</h2>
+<table class="content-table">
+  <thead>
+    <tr class="disable">
+      <th>No</th>
+      <th>Screen</th>
+      <th>URL Scheme</th>
+      <th>App Link/Universal Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>/reissuepass</td>
+      <td><a href="offerbox://reissuepass">offerbox://reissuepass</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/slogin/reissuepass">https://offerbox-stg.ntq.solutions/slogin/reissuepass</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>/sadduser</td>
+      <td><a href="offerbox://sadduser">offerbox://sadduser</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/slogin/sadduser">https://offerbox-stg.ntq.solutions/slogin/sadduser</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>/loginline</td>
+      <td><a href="offerbox://loginline">offerbox://loginline</a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>/logintwitter</td>
+      <td><a href="offerbox://logintwitter">offerbox://logintwitter</a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>/matchingstart</td>
+      <td><a href="offerbox://matchingstart">offerbox://matchingstart</a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>/menu</td>
+      <td><a href="offerbox://menu">offerbox://menu</a></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>/smenu/portfolio</td>
+      <td><a href="offerbox://openweb/profileportfolioedit">offerbox://openweb/profileportfolioedit</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/smenu/portfolio">https://offerbox-stg.ntq.solutions/smenu/portfolio</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>/sprof/prof4</td>
+      <td><a href="offerbox://openweb/profilewishedit">offerbox://openweb/profilewishedit</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sprof/prof4">https://offerbox-stg.ntq.solutions/sprof/prof4</a></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>/spitchbattle</td>
+      <td><a href="offerbox://openweb/event">offerbox://openweb/event</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/spitchbattle">https://offerbox-stg.ntq.solutions/spitchbattle</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>/smenu/setting</td>
+      <td><a href="offerbox://openweb/setting">offerbox://openweb/setting</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/smenu/setting">https://offerbox-stg.ntq.solutions/smenu/setting</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>https://offerboxhelp.zendesk.com/hc/ja</td>
+      <td><a href="offerbox://openweb/help">offerbox://openweb/help</a></td>
+      <td><a target="_blank" href="https://offerboxhelp.zendesk.com/hc/ja">https://offerboxhelp.zendesk.com/hc/ja</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>/terms</td>
+      <td><a href="offerbox://openweb/terms">offerbox://openweb/terms</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/slogin/terms">https://offerbox-stg.ntq.solutions/slogin/terms</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>https://i-plug.co.jp/policy/</td>
+      <td><a href="offerbox://openweb/policy">offerbox://openweb/policy</a></td>
+      <td><a target="_blank" href="https://i-plug.co.jp/policy/">https://i-plug.co.jp/policy/</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>https://i-plug.co.jp/policy/notice_sregistration/</td>
+      <td><a href="offerbox://openweb/noticeregistration">offerbox://openweb/noticeregistration</a></td>
+      <td><a target="_blank" href="https://i-plug.co.jp/policy/notice_sregistration/">https://i-plug.co.jp/policy/notice_sregistration/</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>/openweb/bonusoffer</td>
+      <td><a href="offerbox://openweb/bonusoffer">offerbox://openweb/bonusoffer</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/soffer/bonusoffer">https://offerbox-stg.ntq.solutions/soffer/bonusoffer</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>/sprof/mailsetting</td>
+      <td><a href="offerbox://openweb/pushsetting">offerbox://openweb/pushsetting</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sprof/mailsetting">https://offerbox-stg.ntq.solutions/sprof/mailsetting</a></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>/sstats</td>
+      <td><a href="offerbox://openweb/sstats">offerbox://openweb/sstats</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sstats">https://offerbox-stg.ntq.solutions/sstats</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>/sinformation</td>
+      <td><a href="offerbox://openweb/information">offerbox://openweb/information</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/sinformation">https://offerbox-stg.ntq.solutions/sinformation</a></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>/soffer/offerrelease</td>
+      <td><a href="offerbox://openweb/offerlimitreleaserequest">offerbox://openweb/offerlimitreleaserequest</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/soffer/offerrelease">https://offerbox-stg.ntq.solutions/soffer/offerrelease</a></td>
+    </tr>
+    <tr class="last-of-type-disable">
+      <td>20</td>
+      <td>/smessage/index/8</td>
+      <td><a href="offerbox://openweb/message/8">offerbox://openweb/message/8</a></td>
+      <td><a target="_blank" href="https://offerbox-stg.ntq.solutions/smessage/index/8">https://offerbox-stg.ntq.solutions/smessage/index/8</a></td>
+    </tr>
+  </tbody>
+
+</table>
+</html>
