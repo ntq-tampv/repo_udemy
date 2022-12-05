@@ -10,3 +10,7 @@ Route::get('/v2/cinformation/page/{id}', 'CinformationController@page')->name('g
 Route::get('/v2/cmsgtemplate', 'CmsgtemplateController@index');
 Route::post('/v2/cmsgtemplate', 'CmsgtemplateController@index');
 Route::get('/v2/cevent/about', 'CeventController@about');
+Route::get('/v2/csettings/company', 'CsettingsController@company')->name('get_csettings_company');
+Route::get('/v2/csettings/person/edit/{companyMemberId}', 'Csettings\PersonController@edit')->name('get_csettings_person_edit');
+Route::get('/v2/csettings/person/new', 'Csettings\PersonController@new')->name('get_csettings_person_new');
+Route::get('/v2/csettings/person', 'Csettings\PersonController@index')->name('get_csettings_person');
